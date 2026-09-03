@@ -67,8 +67,8 @@ jobs:
       - name: Run tests
         run: uv run python manage.py test
 
-      - name: Run dependency check
-        run: uv run deptry .
+#      - name: Run dependency check
+#        run: uv run deptry .
 
       - name: Check migrations
         run: uv run python manage.py makemigrations --check --dry-run

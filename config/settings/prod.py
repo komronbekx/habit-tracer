@@ -1,8 +1,8 @@
-from .base import *
+import os
 
-DEBUG = os.getenv('DEBUG')
+DEBUG = os.getenv("DEBUG")
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS")
 
 DATABASES = {
     "default": {

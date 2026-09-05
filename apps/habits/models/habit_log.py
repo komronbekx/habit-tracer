@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import UniqueConstraint
 
-from .habit import Habit
+from apps.habits.models import Habit
 
 
 class HabitLog(models.Model):

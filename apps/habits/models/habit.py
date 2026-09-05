@@ -26,4 +26,6 @@ class Habit(models.Model):
         verbose_name = "Habit"
         verbose_name_plural = "Habits"
         ordering = ["-created_at"]
-        constraints = [UniqueConstraint(fields=["user", "name"], name="unique_habit_user")]
+        constraints = [
+            UniqueConstraint(fields=["user", "name"], name="unique_habit_user")
+        ]

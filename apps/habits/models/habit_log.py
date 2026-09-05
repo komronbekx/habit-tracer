@@ -16,5 +16,6 @@ class HabitLog(models.Model):
         db_table = "habit_log"
         verbose_name = "Habit log"
         verbose_name_plural = "Habit logs"
-        constraints = [UniqueConstraint(fields=["habit", "date"], name="unique_habit_log")]
-
+        constraints = [
+            UniqueConstraint(fields=["habit", "date"], name="unique_habit_log")
+        ]
